@@ -1,10 +1,21 @@
-[gd_scene load_steps=8 format=3 uid="uid://cwcm0oy2odce4"]
+[gd_scene load_steps=19 format=3 uid="uid://cwcm0oy2odce4"]
 
-[ext_resource type="Texture2D" uid="uid://biwtdmd666fe0" path="res://Sprites/Player/Captain Clown Nose/01-Idle/Idle 01.png" id="1_up1rt"]
-[ext_resource type="Texture2D" uid="uid://d1vl0dv4gpeen" path="res://Sprites/Player/Captain Clown Nose/01-Idle/Idle 02.png" id="2_eq430"]
-[ext_resource type="Texture2D" uid="uid://dukid47nfp3kd" path="res://Sprites/Player/Captain Clown Nose/01-Idle/Idle 03.png" id="3_bifse"]
-[ext_resource type="Texture2D" uid="uid://ow3ujyenetwl" path="res://Sprites/Player/Captain Clown Nose/01-Idle/Idle 04.png" id="4_ydpcj"]
-[ext_resource type="Texture2D" uid="uid://c38oigipa52lh" path="res://Sprites/Player/Captain Clown Nose/01-Idle/Idle 05.png" id="5_n43v5"]
+[ext_resource type="Texture2D" uid="uid://b28rnqgtgnx15" path="res://Sprites/Player/Captian Clown Nose with hook/Idle hook/Captain Clown Nose with Hook test1.png" id="1_1wkec"]
+[ext_resource type="Script" path="res://Player Logic/pirate_clown_nose.gd" id="1_s001t"]
+[ext_resource type="Texture2D" uid="uid://dqi2tv3lytund" path="res://Sprites/Player/Captian Clown Nose with hook/Idle hook/Captain Clown Nose with Hook test2.png" id="2_vudni"]
+[ext_resource type="Texture2D" uid="uid://cdby3me0mwh8c" path="res://Sprites/Player/Captian Clown Nose with hook/Idle hook/Captain Clown Nose with Hook test3.png" id="3_jnu4a"]
+[ext_resource type="Texture2D" uid="uid://c2o1g0ikedf2d" path="res://Sprites/Player/Captian Clown Nose with hook/Idle hook/Captain Clown Nose with Hook test4.png" id="4_gl023"]
+[ext_resource type="Texture2D" uid="uid://b1qe1gtg1lv7a" path="res://Sprites/Player/Captian Clown Nose with hook/Idle hook/Captain Clown Nose with Hook test5.png" id="5_yp8f7"]
+[ext_resource type="Texture2D" uid="uid://d23l0pjjdqjti" path="res://Sprites/Player/Captian Clown Nose with hook/Jump hook/Captain Clown Nose with Hook test1.png" id="6_2eq3y"]
+[ext_resource type="Texture2D" uid="uid://bejoupwtrlex5" path="res://Sprites/Player/Captian Clown Nose with hook/Jump hook/Captain Clown Nose with Hook test2.png" id="7_5sbet"]
+[ext_resource type="Texture2D" uid="uid://o7ty7mq2wji" path="res://Sprites/Player/Captian Clown Nose with hook/Jump hook/Captain Clown Nose with Hook test3.png" id="8_b43cb"]
+[ext_resource type="Texture2D" uid="uid://djx3yv1ko15n7" path="res://Sprites/Player/Captian Clown Nose with hook/Jump hook/Captain Clown Nose with Hook test.png" id="9_15df5"]
+[ext_resource type="Texture2D" uid="uid://dwlr6jjy0llph" path="res://Sprites/Player/Captian Clown Nose with hook/Run hook/Captain Clown Nose with Hook test1.png" id="10_bb8bh"]
+[ext_resource type="Texture2D" uid="uid://bybljn0h1uucu" path="res://Sprites/Player/Captian Clown Nose with hook/Run hook/Captain Clown Nose with Hook test2.png" id="11_khxit"]
+[ext_resource type="Texture2D" uid="uid://cl2orkw1m2pyb" path="res://Sprites/Player/Captian Clown Nose with hook/Run hook/Captain Clown Nose with Hook test3.png" id="12_54w0l"]
+[ext_resource type="Texture2D" uid="uid://bnt7xuy4wleur" path="res://Sprites/Player/Captian Clown Nose with hook/Run hook/Captain Clown Nose with Hook test4.png" id="13_7qvsf"]
+[ext_resource type="Texture2D" uid="uid://cte587lvsbwlg" path="res://Sprites/Player/Captian Clown Nose with hook/Run hook/Captain Clown Nose with Hook test5.png" id="14_2ixhm"]
+[ext_resource type="Texture2D" uid="uid://caeu0ker8mdup" path="res://Sprites/Player/Captian Clown Nose with hook/Run hook/Captain Clown Nose with Hook test6.png" id="15_k7fio"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sf4hg"]
 size = Vector2(20, 27)
@@ -13,26 +24,67 @@ size = Vector2(20, 27)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_up1rt")
+"texture": ExtResource("1_1wkec")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_eq430")
+"texture": ExtResource("2_vudni")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_bifse")
+"texture": ExtResource("3_jnu4a")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_ydpcj")
+"texture": ExtResource("4_gl023")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_n43v5")
+"texture": ExtResource("5_yp8f7")
 }],
 "loop": true,
 "name": &"Idle",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_2eq3y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_5sbet")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_b43cb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_15df5")
+}],
+"loop": true,
+"name": &"Jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_bb8bh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_khxit")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_54w0l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_7qvsf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_2ixhm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_k7fio")
+}],
+"loop": true,
+"name": &"Run",
+"speed": 5.0
 }]
 
 [node name="Pirate_Clown_Nose" type="CharacterBody2D"]
+script = ExtResource("1_s001t")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -2.5)
@@ -40,8 +92,11 @@ shape = SubResource("RectangleShape2D_sf4hg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
+position = Vector2(10, -5)
 sprite_frames = SubResource("SpriteFrames_1view")
-animation = &"Idle"
+animation = &"Run"
+frame = 3
+frame_progress = 0.650059
 
 [node name="Camera2D" type="Camera2D" parent="."]
 scale = Vector2(0.3, 0.3)

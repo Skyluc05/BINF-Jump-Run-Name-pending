@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dpplwms1ehfs4"
-path="res://.godot/imported/Run 03.png-486af5beb5f08bc1ba6e307b0ff4ea04.ctex"
+uid="uid://dfuudcky22rnf"
+path="res://.godot/imported/Fall 05.png-41a5053537d4e778986d24e42206c0a9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Player/Dust Particles/Run 03.png"
-dest_files=["res://.godot/imported/Run 03.png-486af5beb5f08bc1ba6e307b0ff4ea04.ctex"]
+source_file="res://Sprites/Player/Captian Clown Nose with hook/Dead Hit Hook/Dust Particles/Fall 05.png"
+dest_files=["res://.godot/imported/Fall 05.png-41a5053537d4e778986d24e42206c0a9.ctex"]
 
 [params]
 
