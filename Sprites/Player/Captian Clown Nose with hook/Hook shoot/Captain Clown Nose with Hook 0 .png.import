@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c583ld5sibftr"
-path="res://.godot/imported/Captain Clown Nose with Hook test1.png-a3b0af40eb817c1c27e17e53b7a318df.ctex"
+uid="uid://cp34d06paqhw6"
+path="res://.godot/imported/Captain Clown Nose with Hook 0 .png-bdece47fa621221b696b80dd712697b3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Player/Captian Clown Nose with hook/Hook shoot/Captain Clown Nose with Hook test1.png"
-dest_files=["res://.godot/imported/Captain Clown Nose with Hook test1.png-a3b0af40eb817c1c27e17e53b7a318df.ctex"]
+source_file="res://Sprites/Player/Captian Clown Nose with hook/Hook shoot/Captain Clown Nose with Hook 0 .png"
+dest_files=["res://.godot/imported/Captain Clown Nose with Hook 0 .png-bdece47fa621221b696b80dd712697b3.ctex"]
 
 [params]
 
