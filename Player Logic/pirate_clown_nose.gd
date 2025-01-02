@@ -4,13 +4,12 @@ extends CharacterBody2D
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
-var firstanimation = true
 
 
 func _physics_process(delta: float) -> void:
 	
 	if is_on_floor():
-			Animation_handler("Idle")
+			anim.play("Idle")
 	if not is_on_floor():	
 		velocity += get_gravity() * delta
 
@@ -28,21 +27,13 @@ func _physics_process(delta: float) -> void:
 	
 
 func jump():
-	Animation_handler("Jump")
+	anim.play("Jump")
 	velocity.y = JUMP_VELOCITY
 	
 	
 func run(direction):
 	if is_on_floor():
-		Animation_handler("Run")
-	elif not is_on_floor():
-		Animation_handler("Jump")
+		anim.play("Run")
 	
 	velocity.x = direction * SPEED
 	
-func Animation_handler(Animation_Name):
-	if firstanimation == true:
-		anim.play(Animation_Name)
-		firstanimation = false
-	if anim.animation_finished:
-		anim.player(Animation_Name)
