@@ -6,12 +6,13 @@ extends CharacterBody2D
 @export var Jump_Buffer_Time = 0.1
 @export var Coyote_Time = 0.5 
 
-const SPEED = 300.0
-const JUMP_VELOCITY = -400
-const ACCELERATION = 0.1
-const DECELERATION = 0.1
+@export var SPEED = 300.0
+@export var JUMP_VELOCITY = -400
+@export var ACCELERATION = 0.1
+@export var DECELERATION = 0.1
 
 var Jump_Buffer = false
+
 var Jump_Available = true
 
 func _physics_process(delta: float) -> void:
@@ -55,11 +56,12 @@ func handle_animation(direction):
 		else:
 			anim.play("Fall")
 			
-		
 func handle_sprite_flip(direction):
 	if direction == 1:
 		anim.flip_h = false
+		anim.offset = Vector2(0,0)
 	if direction == -1:
+		anim.offset = Vector2(-20,0)
 		anim.flip_h = true
 
 func jump():
