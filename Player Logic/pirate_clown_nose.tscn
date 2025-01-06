@@ -1,8 +1,7 @@
-[gd_scene load_steps=28 format=3 uid="uid://cwcm0oy2odce4"]
+[gd_scene load_steps=27 format=3 uid="uid://cwcm0oy2odce4"]
 
 [ext_resource type="Texture2D" uid="uid://b28rnqgtgnx15" path="res://Sprites/Player/Captian Clown Nose with hook/Idle hook/Captain Clown Nose with Hook test1.png" id="1_1wkec"]
 [ext_resource type="Script" path="res://Player Logic/pirate_clown_nose.gd" id="1_s001t"]
-[ext_resource type="Texture2D" uid="uid://bk362vdlwpxn" path="res://Sprites/Player/Captian Clown Nose with hook/Dead Ground/Captain Clown Nose with Hook test1.png" id="2_ndfyf"]
 [ext_resource type="Texture2D" uid="uid://dqi2tv3lytund" path="res://Sprites/Player/Captian Clown Nose with hook/Idle hook/Captain Clown Nose with Hook test2.png" id="2_vudni"]
 [ext_resource type="Texture2D" uid="uid://5vxyijptwuat" path="res://Sprites/Player/Captian Clown Nose with hook/Dead Hit Hook/Captain Clown Nose with Hook test1.png" id="2_wdsq6"]
 [ext_resource type="Texture2D" uid="uid://vyf0lfrav0mr" path="res://Sprites/Player/Captian Clown Nose with hook/Dead Hit Hook/Captain Clown Nose with Hook test2.png" id="3_4i6o8"]
@@ -57,9 +56,6 @@ animations = [{
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 1.0,
-"texture": ExtResource("2_ndfyf")
-}, {
 "duration": 1.0,
 "texture": ExtResource("3_xk8rg")
 }, {
@@ -140,9 +136,10 @@ shape = SubResource("RectangleShape2D_sf4hg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(10, -5)
+position = Vector2(11, -4)
 sprite_frames = SubResource("SpriteFrames_1view")
-animation = &"Fall"
+animation = &"Run"
+frame_progress = 0.561508
 
 [node name="Camera2D" type="Camera2D" parent="."]
 scale = Vector2(0.3, 0.3)
@@ -153,7 +150,7 @@ position_smoothing_enabled = true
 script = ExtResource("25_jmbo1")
 
 [node name="RayCast2D" type="RayCast2D" parent="Grapinghook controler"]
-target_position = Vector2(800, 0)
+target_position = Vector2(300, 0)
 
 [node name="Line2D" type="Line2D" parent="Grapinghook controler"]
 points = PackedVector2Array(0, 0, 0, 0)

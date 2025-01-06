@@ -1,4 +1,4 @@
-[gd_scene load_steps=118 format=4 uid="uid://d1jgk3ip7krq2"]
+[gd_scene load_steps=121 format=4 uid="uid://d1jgk3ip7krq2"]
 
 [ext_resource type="Texture2D" uid="uid://bkohqkkaisgf8" path="res://Sprites/level design stuff/Tilesets/Terrain and Back Wall (32x32).png" id="1_p2w6k"]
 [ext_resource type="Texture2D" uid="uid://bsxp6t7fqv5fu" path="res://Sprites/level design stuff/Tilesets/Platforms (32x32).png" id="2_nyuxo"]
@@ -102,6 +102,9 @@
 [ext_resource type="Texture2D" uid="uid://dc6xjvqwpfjjx" path="res://Sprites/level design stuff/Decorations/Window/Window/72.png" id="82_18pc3"]
 [ext_resource type="Texture2D" uid="uid://cgba50sunskx8" path="res://Sprites/level design stuff/Decorations/Window/Window/73.png" id="83_obbpw"]
 [ext_resource type="Texture2D" uid="uid://dpgjb60a5jccq" path="res://Sprites/level design stuff/Decorations/Window/Window/74.png" id="84_5l7ir"]
+[ext_resource type="Script" path="res://kerzen_2.gd" id="103_cmyte"]
+[ext_resource type="PackedScene" uid="uid://n4ysn6jt881n" path="res://Enemy Logic/Fierce_Tooth/fierce_tooth.tscn" id="104_pm3au"]
+[ext_resource type="Script" path="res://Enemy Logic/Fierce_Tooth/fierce_tooth.gd" id="105_kp2c7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0rivg"]
 texture = ExtResource("1_p2w6k")
@@ -1384,11 +1387,13 @@ sprite_frames = SubResource("SpriteFrames_ua4ij")
 frame_progress = 0.640552
 
 [node name="Kerzen" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
 position = Vector2(295, -72)
 sprite_frames = SubResource("SpriteFrames_looag")
 frame_progress = 0.387755
 
 [node name="Licht Kerze 1" type="AnimatedSprite2D" parent="Kerzen"]
+texture_filter = 1
 position = Vector2(266, 10)
 scale = Vector2(1.40625, 1.5)
 sprite_frames = SubResource("SpriteFrames_upy8w")
@@ -1397,6 +1402,7 @@ frame_progress = 0.0370222
 [node name="Kerzen2" type="AnimatedSprite2D" parent="Kerzen"]
 position = Vector2(713, 32)
 sprite_frames = SubResource("SpriteFrames_looag")
+script = ExtResource("103_cmyte")
 
 [node name="Licht Kerze 2" type="AnimatedSprite2D" parent="Kerzen/Kerzen2"]
 position = Vector2(-726, -56)
@@ -1473,3 +1479,9 @@ position = Vector2(-13, -22)
 scale = Vector2(1.40625, 1.5)
 sprite_frames = SubResource("SpriteFrames_upy8w")
 frame_progress = 0.59363
+
+[node name="Enemys" type="Node2D" parent="."]
+
+[node name="Fierce Tooth" parent="Enemys" instance=ExtResource("104_pm3au")]
+position = Vector2(21, -56)
+script = ExtResource("105_kp2c7")
