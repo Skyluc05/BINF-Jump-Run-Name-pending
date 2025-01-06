@@ -1,12 +1,12 @@
 extends Node2D
 
-@onready var player := get_parent()
-@onready var ray := $RayCast2D
-@onready var rope := $Line2D
-
 @export var rest_lenght = 2.0
 @export var stiffness = 10.0
 @export var damping = 2.0
+
+@onready var player := get_parent()
+@onready var ray := $RayCast2D
+@onready var rope := $Line2D
 
 var launched = false
 var target: Vector2
@@ -50,6 +50,5 @@ func handle_grapple(delta):
 		
 	player.velocity += force * delta
 	update_rope()
-	
 func update_rope():
 	rope.set_point_position(1, to_local(target))
