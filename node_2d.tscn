@@ -1382,6 +1382,7 @@ frame_progress = 0.25658
 position = Vector2(0, 99)
 sprite_frames = SubResource("SpriteFrames_ua4ij")
 frame_progress = 0.640552
+<<<<<<< HEAD
 
 [node name="Kerzen" type="AnimatedSprite2D" parent="."]
 position = Vector2(295, -72)
@@ -1473,3 +1474,5 @@ position = Vector2(-13, -22)
 scale = Vector2(1.40625, 1.5)
 sprite_frames = SubResource("SpriteFrames_upy8w")
 frame_progress = 0.59363
+=======
+>>>>>>> parent of dc7b57d (Leichte Änderungen Animations Nodes)
