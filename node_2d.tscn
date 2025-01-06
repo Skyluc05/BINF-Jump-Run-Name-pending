@@ -1,5 +1,4 @@
 [gd_scene load_steps=118 format=4 uid="uid://d1jgk3ip7krq2"]
-[gd_scene load_steps=121 format=4 uid="uid://d1jgk3ip7krq2"]
 
 [ext_resource type="Texture2D" uid="uid://bkohqkkaisgf8" path="res://Sprites/level design stuff/Tilesets/Terrain and Back Wall (32x32).png" id="1_p2w6k"]
 [ext_resource type="Texture2D" uid="uid://bsxp6t7fqv5fu" path="res://Sprites/level design stuff/Tilesets/Platforms (32x32).png" id="2_nyuxo"]
@@ -103,9 +102,6 @@
 [ext_resource type="Texture2D" uid="uid://dc6xjvqwpfjjx" path="res://Sprites/level design stuff/Decorations/Window/Window/72.png" id="82_18pc3"]
 [ext_resource type="Texture2D" uid="uid://cgba50sunskx8" path="res://Sprites/level design stuff/Decorations/Window/Window/73.png" id="83_obbpw"]
 [ext_resource type="Texture2D" uid="uid://dpgjb60a5jccq" path="res://Sprites/level design stuff/Decorations/Window/Window/74.png" id="84_5l7ir"]
-[ext_resource type="Script" path="res://kerzen_2.gd" id="103_cmyte"]
-[ext_resource type="PackedScene" uid="uid://n4ysn6jt881n" path="res://Enemy Logic/Fierce_Tooth/fierce_tooth.tscn" id="104_pm3au"]
-[ext_resource type="Script" path="res://Enemy Logic/Fierce_Tooth/fierce_tooth.gd" id="105_kp2c7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0rivg"]
 texture = ExtResource("1_p2w6k")
@@ -868,52 +864,6 @@ sources/20 = SubResource("TileSetAtlasSource_hp112")
 sources/21 = SubResource("TileSetAtlasSource_3mqjy")
 sources/22 = SubResource("TileSetAtlasSource_3n67i")
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_looag"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("19_qs63r")
-}, {
-"duration": 1.0,
-"texture": ExtResource("20_tn6vy")
-}, {
-"duration": 1.0,
-"texture": ExtResource("21_wym4t")
-}, {
-"duration": 1.0,
-"texture": ExtResource("22_uw1i2")
-}, {
-"duration": 1.0,
-"texture": ExtResource("23_vauhb")
-}, {
-"duration": 1.0,
-"texture": ExtResource("24_0hh5m")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_upy8w"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("25_kosr6")
-}, {
-"duration": 1.0,
-"texture": ExtResource("26_aa7a0")
-}, {
-"duration": 1.0,
-"texture": ExtResource("27_3lm2j")
-}, {
-"duration": 1.0,
-"texture": ExtResource("28_hlpyj")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_fka11"]
 animations = [{
 "frames": [{
@@ -1208,6 +1158,52 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_looag"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_qs63r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_tn6vy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_wym4t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_uw1i2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_vauhb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_0hh5m")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_upy8w"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("25_kosr6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_aa7a0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_3lm2j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_hlpyj")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="Node2D" type="Node2D"]
 
 [node name="Platformen & Levelgrenze (Levelborder)" type="TileMapLayer" parent="."]
@@ -1231,101 +1227,6 @@ tile_set = SubResource("TileSet_ytofc")
 [node name="Pirate_Clown_Nose" parent="." instance=ExtResource("3_ghb6p")]
 z_index = 3
 position = Vector2(-183, -56)
-
-[node name="Kerzen" type="Node2D" parent="."]
-position = Vector2(-105, 0)
-
-[node name="Kerze 1" type="AnimatedSprite2D" parent="Kerzen"]
-position = Vector2(400, -72)
-sprite_frames = SubResource("SpriteFrames_looag")
-frame_progress = 0.387755
-
-[node name="Licht Kerze 1" type="AnimatedSprite2D" parent="Kerzen/Kerze 1"]
-position = Vector2(266, 10)
-scale = Vector2(1.40625, 1.5)
-sprite_frames = SubResource("SpriteFrames_upy8w")
-frame_progress = 0.0370222
-
-[node name="Kerze 2" type="AnimatedSprite2D" parent="Kerzen"]
-position = Vector2(1113, -40)
-sprite_frames = SubResource("SpriteFrames_looag")
-
-[node name="Licht Kerze 2" type="AnimatedSprite2D" parent="Kerzen/Kerze 2"]
-position = Vector2(-726, -56)
-scale = Vector2(1.40625, 1.5)
-sprite_frames = SubResource("SpriteFrames_upy8w")
-frame_progress = 0.812884
-
-[node name="Kerzen3" type="AnimatedSprite2D" parent="Kerzen/Kerze 2"]
-position = Vector2(303, 192)
-sprite_frames = SubResource("SpriteFrames_looag")
-
-[node name="Licht Kerze 3" type="AnimatedSprite2D" parent="Kerzen/Kerze 2/Kerzen3"]
-position = Vector2(-318, -230)
-scale = Vector2(1.40625, 1.5)
-sprite_frames = SubResource("SpriteFrames_upy8w")
-frame_progress = 0.59363
-
-[node name="Kerze 4" type="AnimatedSprite2D" parent="Kerzen/Kerze 2"]
-position = Vector2(210, 384)
-sprite_frames = SubResource("SpriteFrames_looag")
-
-[node name="Licht Kerze 4" type="AnimatedSprite2D" parent="Kerzen/Kerze 2/Kerze 4"]
-position = Vector2(80, -214)
-scale = Vector2(1.40625, 1.5)
-sprite_frames = SubResource("SpriteFrames_upy8w")
-frame_progress = 0.59363
-
-[node name="Kerzen5" type="AnimatedSprite2D" parent="Kerzen/Kerze 2"]
-position = Vector2(-342, 384)
-scale = Vector2(1, 1)
-sprite_frames = SubResource("SpriteFrames_looag")
-
-[node name="Licht Kerze 5" type="AnimatedSprite2D" parent="Kerzen/Kerze 2/Kerzen5"]
-position = Vector2(539, -22)
-scale = Vector2(1.40625, 1.5)
-sprite_frames = SubResource("SpriteFrames_upy8w")
-frame_progress = 0.59363
-
-[node name="Kerzen6" type="AnimatedSprite2D" parent="Kerzen/Kerze 2"]
-position = Vector2(-432, 0)
-sprite_frames = SubResource("SpriteFrames_looag")
-
-[node name="Licht Kerze 6" type="AnimatedSprite2D" parent="Kerzen/Kerze 2/Kerzen6"]
-position = Vector2(76, 362)
-scale = Vector2(1.40625, 1.5)
-sprite_frames = SubResource("SpriteFrames_upy8w")
-frame_progress = 0.59363
-
-[node name="Kerzen7" type="AnimatedSprite2D" parent="Kerzen"]
-position = Vector2(239, 537)
-sprite_frames = SubResource("SpriteFrames_looag")
-
-[node name="Licht Kerze 7" type="AnimatedSprite2D" parent="Kerzen/Kerzen7"]
-position = Vector2(-14, -22)
-scale = Vector2(1.40625, 1.5)
-sprite_frames = SubResource("SpriteFrames_upy8w")
-frame_progress = 0.59363
-
-[node name="Kerzen8" type="AnimatedSprite2D" parent="Kerzen"]
-position = Vector2(584, 616)
-sprite_frames = SubResource("SpriteFrames_looag")
-
-[node name="Licht Kerze 8" type="AnimatedSprite2D" parent="Kerzen/Kerzen8"]
-position = Vector2(-13, -22)
-scale = Vector2(1.40625, 1.5)
-sprite_frames = SubResource("SpriteFrames_upy8w")
-frame_progress = 0.59363
-
-[node name="Kerze 9" type="AnimatedSprite2D" parent="Kerzen"]
-position = Vector2(984, 536)
-sprite_frames = SubResource("SpriteFrames_looag")
-
-[node name="Licht Kerze 9" type="AnimatedSprite2D" parent="Kerzen/Kerze 9"]
-position = Vector2(-13, -22)
-scale = Vector2(1.40625, 1.5)
-sprite_frames = SubResource("SpriteFrames_upy8w")
-frame_progress = 0.59363
 
 [node name="Fenster" type="AnimatedSprite2D" parent="."]
 position = Vector2(-126, -99)
@@ -1482,16 +1383,13 @@ position = Vector2(0, 99)
 sprite_frames = SubResource("SpriteFrames_ua4ij")
 frame_progress = 0.640552
 <<<<<<< HEAD
-=======
 
 [node name="Kerzen" type="AnimatedSprite2D" parent="."]
-texture_filter = 1
 position = Vector2(295, -72)
 sprite_frames = SubResource("SpriteFrames_looag")
 frame_progress = 0.387755
 
 [node name="Licht Kerze 1" type="AnimatedSprite2D" parent="Kerzen"]
-texture_filter = 1
 position = Vector2(266, 10)
 scale = Vector2(1.40625, 1.5)
 sprite_frames = SubResource("SpriteFrames_upy8w")
@@ -1500,7 +1398,6 @@ frame_progress = 0.0370222
 [node name="Kerzen2" type="AnimatedSprite2D" parent="Kerzen"]
 position = Vector2(713, 32)
 sprite_frames = SubResource("SpriteFrames_looag")
-script = ExtResource("103_cmyte")
 
 [node name="Licht Kerze 2" type="AnimatedSprite2D" parent="Kerzen/Kerzen2"]
 position = Vector2(-726, -56)
@@ -1577,10 +1474,5 @@ position = Vector2(-13, -22)
 scale = Vector2(1.40625, 1.5)
 sprite_frames = SubResource("SpriteFrames_upy8w")
 frame_progress = 0.59363
-
-[node name="Enemys" type="Node2D" parent="."]
-
-[node name="Fierce Tooth" parent="Enemys" instance=ExtResource("104_pm3au")]
-position = Vector2(21, -56)
-script = ExtResource("105_kp2c7")
->>>>>>> d63d73d29101332ccff4e4ab31aef52f86c2799d
+=======
+>>>>>>> parent of dc7b57d (Leichte Änderungen Animations Nodes)
