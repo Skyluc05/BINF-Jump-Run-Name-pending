@@ -1,0 +1,65 @@
+[gd_scene load_steps=10 format=3 uid="uid://n4ysn6jt881n"]
+
+[ext_resource type="Texture2D" uid="uid://dwf1n3emww0om" path="res://Sprites/Enemys/Fierce Tooth/02-Run/Run 01.png" id="1_ydofo"]
+[ext_resource type="Texture2D" uid="uid://nqklsc10mdak" path="res://Sprites/Enemys/Fierce Tooth/02-Run/Run 02.png" id="2_y8m5k"]
+[ext_resource type="Texture2D" uid="uid://bypys17853prs" path="res://Sprites/Enemys/Fierce Tooth/02-Run/Run 03.png" id="3_f0i3p"]
+[ext_resource type="Texture2D" uid="uid://bh11becpurfb4" path="res://Sprites/Enemys/Fierce Tooth/02-Run/Run 04.png" id="4_rd83c"]
+[ext_resource type="Texture2D" uid="uid://rg4rysm3gub3" path="res://Sprites/Enemys/Fierce Tooth/02-Run/Run 05.png" id="5_q4a3y"]
+[ext_resource type="Texture2D" uid="uid://dtrj0iv6j6548" path="res://Sprites/Enemys/Fierce Tooth/02-Run/Run 06.png" id="6_54yjw"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_j86g4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ydofo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_y8m5k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_f0i3p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_rd83c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_q4a3y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_54yjw")
+}],
+"loop": true,
+"name": &"Run",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ius4x"]
+size = Vector2(18, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5vfex"]
+size = Vector2(20, 25)
+
+[node name="Fierce Tooth" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_j86g4")
+animation = &"Run"
+frame_progress = 0.859025
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 3)
+shape = SubResource("RectangleShape2D_ius4x")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_5vfex")
+
+[node name="RaycastDir" type="RayCast2D" parent="."]
+target_position = Vector2(-11, 0)
+
+[node name="RaycastDown" type="RayCast2D" parent="."]
+position = Vector2(-10, 0)
+target_position = Vector2(0, 14)
