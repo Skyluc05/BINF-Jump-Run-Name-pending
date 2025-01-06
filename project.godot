@@ -17,6 +17,7 @@ config/features=PackedStringArray("4.3", "Forward Plus")
 [file_customization]
 
 folder_colors={
+"res://Enemy Logic/": "red",
 "res://Player Logic/": "green",
 "res://Sprites/Collectibles/": "yellow",
 "res://Sprites/Enemys/": "red",
