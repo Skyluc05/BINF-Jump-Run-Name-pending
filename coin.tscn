@@ -1,0 +1,73 @@
+[gd_scene load_steps=12 format=3 uid="uid://c6ugigonhxdx0"]
+
+[ext_resource type="Texture2D" uid="uid://c4gm0u2dd51vk" path="res://Sprites/Collectibles/Gold Coin/01.png" id="1_8pd3b"]
+[ext_resource type="Texture2D" uid="uid://cxiu5skxvd6iu" path="res://Sprites/Collectibles/Gold Coin/02.png" id="2_3484f"]
+[ext_resource type="Texture2D" uid="uid://cdfl82x43ggr5" path="res://Sprites/Collectibles/Gold Coin/03.png" id="3_8op2u"]
+[ext_resource type="Texture2D" uid="uid://bucaamiphy81w" path="res://Sprites/Collectibles/Gold Coin/04.png" id="4_tec5c"]
+[ext_resource type="Texture2D" uid="uid://dy6s4aq0ygqyx" path="res://Sprites/Collectibles/Coin Effect/01.png" id="5_p8r6l"]
+[ext_resource type="Texture2D" uid="uid://crxfm2qc3yv22" path="res://Sprites/Collectibles/Coin Effect/02.png" id="6_sb4pv"]
+[ext_resource type="Texture2D" uid="uid://n22v31g5g2i1" path="res://Sprites/Collectibles/Coin Effect/03.png" id="7_ycb0r"]
+[ext_resource type="Script" path="res://coin_0.gd" id="8_lcni3"]
+[ext_resource type="Texture2D" uid="uid://b5isdwvvklqhq" path="res://Sprites/Collectibles/Coin Effect/Coin Weg.png" id="8_mvd8a"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cvbag"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_8pd3b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_3484f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_8op2u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_tec5c")
+}],
+"loop": true,
+"name": &"Coin",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_p8r6l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_sb4pv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ycb0r")
+}],
+"loop": true,
+"name": &"Coin Collect",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_mvd8a")
+}],
+"loop": true,
+"name": &"Coin WEG",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xvqho"]
+radius = 4.0
+
+[node name="coin" type="Node2D"]
+z_index = 1
+
+[node name="Coin" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_cvbag")
+animation = &"Coin Collect"
+script = ExtResource("8_lcni3")
+
+[node name="Area2D" type="Area2D" parent="Coin"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Coin/Area2D"]
+texture_filter = 1
+shape = SubResource("CircleShape2D_xvqho")
+
+[connection signal="body_shape_entered" from="Coin/Area2D" to="Coin" method="_on_area_2d_body_shape_entered"]

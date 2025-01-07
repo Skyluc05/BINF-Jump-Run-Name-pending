@@ -135,6 +135,7 @@ position = Vector2(0, -2.5)
 shape = SubResource("RectangleShape2D_sf4hg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+z_index = 1
 texture_filter = 1
 position = Vector2(11, -4)
 sprite_frames = SubResource("SpriteFrames_1view")

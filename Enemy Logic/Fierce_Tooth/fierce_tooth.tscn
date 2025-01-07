@@ -7,6 +7,9 @@
 [ext_resource type="Texture2D" uid="uid://rg4rysm3gub3" path="res://Sprites/Enemys/Fierce Tooth/02-Run/Run 05.png" id="5_q4a3y"]
 [ext_resource type="Texture2D" uid="uid://dtrj0iv6j6548" path="res://Sprites/Enemys/Fierce Tooth/02-Run/Run 06.png" id="6_54yjw"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ius4x"]
+size = Vector2(18, 1)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_j86g4"]
 animations = [{
 "frames": [{
@@ -33,23 +36,22 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ius4x"]
-size = Vector2(18, 20)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5vfex"]
 size = Vector2(20, 25)
 
 [node name="Fierce Tooth" type="CharacterBody2D"]
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 11)
+shape = SubResource("RectangleShape2D_ius4x")
+
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+z_index = 1
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_j86g4")
 animation = &"Run"
-frame_progress = 0.859025
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 3)
-shape = SubResource("RectangleShape2D_ius4x")
+frame = 3
+frame_progress = 0.0783581
 
 [node name="Area2D" type="Area2D" parent="."]
 
