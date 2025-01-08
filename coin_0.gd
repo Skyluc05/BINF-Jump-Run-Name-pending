@@ -6,7 +6,6 @@ var coin_collected = false
 func _process(delta: float) -> void:
 	if coin_collected == true:
 		play("Coin WEG")
-	
 	elif coin_is_da == true:
 		play("Coin")
 	else:

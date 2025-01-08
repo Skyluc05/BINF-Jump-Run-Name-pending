@@ -1577,361 +1577,271 @@ frame_progress = 0.59363
 [node name="Coins" type="Node2D" parent="Collectables"]
 
 [node name="coin" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(150, -49)
 
 [node name="coin2" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(183, -50)
 
 [node name="coin3" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(238, -77)
 
 [node name="coin4" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(262, -77)
 
 [node name="coin5" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(284, -77)
 
 [node name="coin6" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(383, -62)
 
 [node name="coin7" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(404, -62)
 
 [node name="coin8" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(428, -63)
 
 [node name="coin9" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(543, -48)
 
 [node name="coin10" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(563, -48)
 
 [node name="coin11" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(714, -47)
 
 [node name="coin12" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(782, -47)
 
 [node name="coin14" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(811, -47)
 
 [node name="coin15" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(1049, -45)
 
 [node name="coin16" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(1071, -46)
 
 [node name="coin17" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(1096, -45)
 
 [node name="coin18" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(1263, -31)
 
 [node name="coin19" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(1285, -31)
 
 [node name="coin20" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(1309, -31)
 
 [node name="coin21" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(1326, -31)
 
 [node name="coin22" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(1111, 81)
 
 [node name="coin23" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(1095, 82)
 
 [node name="coin24" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(1081, 82)
 
 [node name="coin25" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(1247, 146)
 
 [node name="coin26" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(1266, 145)
 
 [node name="coin27" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(1284, 145)
 
 [node name="coin28" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(1299, 146)
 
 [node name="coin29" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(1142, 253)
 
 [node name="coin30" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(1186, 277)
 
 [node name="coin31" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(1092, 278)
 
 [node name="coin32" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(1047, 264)
 
 [node name="coin33" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(999, 279)
 
 [node name="coin34" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(953, 262)
 
 [node name="coin35" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(904, 276)
 
 [node name="coin36" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(858, 264)
 
 [node name="coin37" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(806, 279)
 
 [node name="coin38" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(762, 262)
 
 [node name="coin39" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(710, 278)
 
 [node name="coin40" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(663, 259)
 
 [node name="coin41" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(632, 279)
 
 [node name="coin42" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(576, 281)
 
 [node name="coin43" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(531, 309)
 
 [node name="coin44" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(429, 270)
 
 [node name="coin45" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(390, 274)
 
 [node name="coin46" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(469, 273)
 
 [node name="coin47" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(324, 307)
 
 [node name="coin48" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(270, 271)
 
 [node name="coin49" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(232, 259)
 
 [node name="coin50" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(189, 276)
 
 [node name="coin51" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(118, 311)
 
 [node name="coin52" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(52, 517)
 
 [node name="coin55" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(-248, 518)
 
 [node name="coin56" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(17, 490)
 
 [node name="coin57" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(17, 490)
 
 [node name="coin58" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(-22, 463)
 
 [node name="coin59" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(-60, 429)
 
 [node name="coin60" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(147, 525)
 
 [node name="coin61" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(180, 524)
 
 [node name="coin62" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(209, 523)
 
 [node name="coin63" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(241, 523)
 
 [node name="coin64" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(268, 524)
 
 [node name="coin65" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(296, 525)
 
 [node name="coin66" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(493, 613)
 
 [node name="coin70" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(511, 613)
 
 [node name="coin71" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(563, 614)
 
 [node name="coin72" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(579, 614)
 
 [node name="coin73" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(598, 614)
 
 [node name="coin74" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(729, 614)
 
 [node name="coin75" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(747, 614)
 
 [node name="coin76" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(765, 614)
 
 [node name="coin77" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(842, 615)
 
 [node name="coin78" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(862, 614)
 
 [node name="coin79" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(884, 614)
 
 [node name="coin80" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(898, 614)
 
 [node name="coin81" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(989, 614)
 
 [node name="coin82" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(1006, 614)
 
 [node name="coin83" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(1023, 614)
 
 [node name="coin84" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(1040, 614)
 
 [node name="coin85" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(1221, 613)
 
 [node name="coin86" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(1195, 612)
 
 [node name="coin87" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(1170, 613)
 
 [node name="coin88" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(1149, 615)
 
 [node name="coin89" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(1275, 612)
 
 [node name="coin90" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(1331, 611)
 
 [node name="coin67" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(385, 612)
 
 [node name="coin68" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(410, 611)
 
 [node name="coin69" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(429, 611)
 
 [node name="coin53" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(-216, 305)
 
 [node name="coin54" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(-193, 308)
 
 [node name="coin13" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
-z_index = 1
 position = Vector2(749, -47)

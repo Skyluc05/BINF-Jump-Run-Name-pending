@@ -23,7 +23,7 @@
 [ext_resource type="Texture2D" uid="uid://bnt7xuy4wleur" path="res://Sprites/Player/Captian Clown Nose with hook/Run hook/Captain Clown Nose with Hook test4.png" id="13_7qvsf"]
 [ext_resource type="Texture2D" uid="uid://cte587lvsbwlg" path="res://Sprites/Player/Captian Clown Nose with hook/Run hook/Captain Clown Nose with Hook test5.png" id="14_2ixhm"]
 [ext_resource type="Texture2D" uid="uid://caeu0ker8mdup" path="res://Sprites/Player/Captian Clown Nose with hook/Run hook/Captain Clown Nose with Hook test6.png" id="15_k7fio"]
-[ext_resource type="Script" path="res://Player Logic/node_2d.gd" id="25_jmbo1"]
+[ext_resource type="Script" path="res://Player Logic/grapinghook_controler.gd" id="24_lgsrj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sf4hg"]
 size = Vector2(20, 27)
@@ -139,8 +139,7 @@ z_index = 1
 texture_filter = 1
 position = Vector2(11, -4)
 sprite_frames = SubResource("SpriteFrames_1view")
-animation = &"Run"
-frame_progress = 0.561508
+animation = &"Idle"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 scale = Vector2(0.3, 0.3)
@@ -148,7 +147,7 @@ zoom = Vector2(3, 3)
 position_smoothing_enabled = true
 
 [node name="Grapinghook controler" type="Node2D" parent="."]
-script = ExtResource("25_jmbo1")
+script = ExtResource("24_lgsrj")
 
 [node name="RayCast2D" type="RayCast2D" parent="Grapinghook controler"]
 target_position = Vector2(300, 0)
