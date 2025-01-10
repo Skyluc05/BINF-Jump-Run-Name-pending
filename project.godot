@@ -21,6 +21,7 @@ folder_colors={
 "res://Player Logic/": "green",
 "res://Sprites/Collectibles/": "yellow",
 "res://Sprites/Enemys/": "red",
+"res://Sprites/Enemys/Spikes/": "red",
 "res://Sprites/Player/": "green",
 "res://Sprites/level design stuff/": "blue"
 }

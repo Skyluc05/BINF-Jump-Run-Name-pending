@@ -83,3 +83,5 @@ func run(direction):
 		velocity.x = lerp(velocity.x, SPEED * direction, ACCELERATION)
 	else:
 		velocity.x = 0
+func die():
+	get_tree().reload_current_scene()
