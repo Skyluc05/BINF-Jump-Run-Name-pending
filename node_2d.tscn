@@ -1,4 +1,4 @@
-[gd_scene load_steps=159 format=4 uid="uid://d1jgk3ip7krq2"]
+[gd_scene load_steps=161 format=4 uid="uid://d1jgk3ip7krq2"]
 
 [ext_resource type="Texture2D" uid="uid://bkohqkkaisgf8" path="res://Sprites/level design stuff/Tilesets/Terrain and Back Wall (32x32).png" id="1_p2w6k"]
 [ext_resource type="Texture2D" uid="uid://bsxp6t7fqv5fu" path="res://Sprites/level design stuff/Tilesets/Platforms (32x32).png" id="2_nyuxo"]
@@ -143,6 +143,7 @@
 [ext_resource type="Script" path="res://kerzen_8.gd" id="140_pjjd8"]
 [ext_resource type="Script" path="res://licht_kerze_8.gd" id="141_15hns"]
 [ext_resource type="Script" path="res://kerzen_9.gd" id="142_v5alm"]
+[ext_resource type="Script" path="res://ende.gd" id="144_squkl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0rivg"]
 texture = ExtResource("1_p2w6k")
@@ -1245,6 +1246,9 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ylclm"]
+size = Vector2(41, 51)
+
 [node name="Node2D" type="Node2D"]
 
 [node name="Platformen & Levelgrenze (Levelborder)" type="TileMapLayer" parent="."]
@@ -1268,12 +1272,12 @@ tile_set = SubResource("TileSet_ytofc")
 
 [node name="Pirate_Clown_Nose" parent="." instance=ExtResource("3_ghb6p")]
 z_index = 3
-position = Vector2(-183, -56)
+position = Vector2(-190, -96)
 
 [node name="Enemys" type="Node2D" parent="."]
 
 [node name="Fierce Tooth" parent="Enemys" instance=ExtResource("104_pm3au")]
-position = Vector2(845, 337)
+position = Vector2(1348, 608)
 
 [node name="Spikes" type="Node2D" parent="Enemys"]
 
@@ -1362,10 +1366,304 @@ position = Vector2(716, 40)
 position = Vector2(809, 39)
 
 [node name="Spikes29" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
-position = Vector2(869, 39)
+position = Vector2(872, -4)
 
 [node name="Spikes30" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
 position = Vector2(893, 38)
+
+[node name="Spikes31" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(1343, 376)
+
+[node name="Spikes32" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(1326, 376)
+
+[node name="Spikes33" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(1309, 376)
+
+[node name="Spikes34" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(1292, 376)
+
+[node name="Spikes35" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(1276, 376)
+
+[node name="Spikes36" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(1259, 376)
+
+[node name="Spikes37" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(1242, 376)
+
+[node name="Spikes38" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(1225, 376)
+
+[node name="Spikes39" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(1207, 376)
+
+[node name="Spikes40" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(1190, 376)
+
+[node name="Spikes41" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(1173, 376)
+
+[node name="Spikes42" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(1156, 376)
+
+[node name="Spikes43" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(1139, 376)
+
+[node name="Spikes44" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(1123, 376)
+
+[node name="Spikes45" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(1107, 376)
+
+[node name="Spikes46" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(1090, 376)
+
+[node name="Spikes47" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(1073, 376)
+
+[node name="Spikes48" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(1056, 376)
+
+[node name="Spikes49" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(1039, 376)
+
+[node name="Spikes50" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(1022, 376)
+
+[node name="Spikes51" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(1005, 376)
+
+[node name="Spikes52" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(988, 376)
+
+[node name="Spikes53" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(971, 376)
+
+[node name="Spikes54" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(954, 376)
+
+[node name="Spikes55" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(937, 376)
+
+[node name="Spikes56" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(920, 376)
+
+[node name="Spikes57" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(902, 376)
+
+[node name="Spikes58" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(885, 376)
+
+[node name="Spikes59" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(869, 376)
+
+[node name="Spikes60" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(852, 376)
+
+[node name="Spikes61" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(835, 376)
+
+[node name="Spikes62" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(819, 376)
+
+[node name="Spikes64" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(782, 376)
+
+[node name="Spikes63" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(801, 376)
+
+[node name="Spikes65" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(764, 376)
+
+[node name="Spikes66" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(747, 376)
+
+[node name="Spikes67" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(727, 376)
+
+[node name="Spikes68" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(709, 376)
+
+[node name="Spikes69" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(691, 376)
+
+[node name="Spikes70" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(672, 376)
+
+[node name="Spikes71" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(655, 376)
+
+[node name="Spikes72" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(638, 376)
+
+[node name="Spikes73" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(621, 376)
+
+[node name="Spikes74" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(603, 376)
+
+[node name="Spikes75" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(585, 376)
+
+[node name="Spikes76" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(568, 376)
+
+[node name="Spikes77" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(551, 376)
+
+[node name="Spikes78" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(534, 376)
+
+[node name="Spikes79" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(517, 376)
+
+[node name="Spikes80" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(500, 376)
+
+[node name="Spikes81" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(483, 376)
+
+[node name="Spikes82" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(466, 376)
+
+[node name="Spikes83" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(449, 376)
+
+[node name="Spikes84" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(431, 376)
+
+[node name="Spikes85" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(414, 376)
+
+[node name="Spikes86" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(397, 376)
+
+[node name="Spikes87" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(380, 376)
+
+[node name="Spikes88" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(363, 376)
+
+[node name="Spikes89" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(345, 376)
+
+[node name="Spikes90" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(329, 376)
+
+[node name="Spikes91" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(311, 376)
+
+[node name="Spikes92" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(294, 376)
+
+[node name="Spikes93" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(277, 376)
+
+[node name="Spikes94" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(259, 376)
+
+[node name="Spikes95" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(241, 376)
+
+[node name="Spikes96" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(224, 376)
+
+[node name="Spikes97" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(206, 376)
+
+[node name="Spikes98" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(188, 376)
+
+[node name="Spikes99" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(170, 376)
+
+[node name="Spikes100" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(152, 376)
+
+[node name="Spikes101" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(135, 376)
+
+[node name="Spikes102" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(118, 376)
+
+[node name="Spikes103" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(100, 376)
+
+[node name="Spikes104" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(83, 376)
+
+[node name="Spikes105" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(94, 616)
+
+[node name="Spikes106" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(77, 616)
+
+[node name="Spikes107" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(60, 616)
+
+[node name="Spikes108" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(44, 616)
+
+[node name="Spikes109" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(28, 616)
+
+[node name="Spikes110" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(12, 616)
+
+[node name="Spikes111" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(-4, 616)
+
+[node name="Spikes112" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(-20, 616)
+
+[node name="Spikes113" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(-36, 616)
+
+[node name="Spikes114" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(-52, 616)
+
+[node name="Spikes115" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(-69, 616)
+
+[node name="Spikes116" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(-86, 616)
+
+[node name="Spikes117" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(-103, 616)
+
+[node name="Spikes118" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(-120, 616)
+
+[node name="Spikes119" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(-137, 616)
+
+[node name="Spikes120" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(-154, 616)
+
+[node name="Spikes121" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(-170, 616)
+
+[node name="Spikes122" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(-186, 616)
+
+[node name="Spikes123" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(-202, 616)
+
+[node name="Spikes124" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(-218, 616)
+
+[node name="Spikes125" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(-235, 616)
+
+[node name="Spikes127" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(-251, 616)
+
+[node name="Spikes128" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(-267, 616)
+
+[node name="Spikes129" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
+position = Vector2(-285, 616)
 
 [node name="Gegenstände" type="Node2D" parent="."]
 
@@ -1936,3 +2234,15 @@ position = Vector2(-193, 308)
 
 [node name="coin13" parent="Collectables/Coins" instance=ExtResource("115_gqjo1")]
 position = Vector2(749, -47)
+
+[node name="Ende" type="Node2D" parent="Collectables"]
+script = ExtResource("144_squkl")
+
+[node name="Area2D" type="Area2D" parent="Collectables/Ende"]
+position = Vector2(0, -2)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collectables/Ende/Area2D"]
+position = Vector2(1303.5, 599.5)
+shape = SubResource("RectangleShape2D_ylclm")
+
+[connection signal="body_entered" from="Collectables/Ende/Area2D" to="Collectables/Ende" method="_on_area_2d_body_entered"]

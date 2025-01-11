@@ -85,3 +85,6 @@ func run(direction):
 		velocity.x = 0
 func die():
 	get_tree().reload_current_scene()
+
+func end():
+		get_tree().quit()

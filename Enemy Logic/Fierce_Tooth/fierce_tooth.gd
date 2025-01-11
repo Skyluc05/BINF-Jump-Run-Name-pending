@@ -34,3 +34,9 @@ func animation_handler():
 
 func _on_area_2d_area_entered(area: Area2D) -> void:
 	area.get_parent().die()
+	
+func die():
+		pass
+		
+func end():
+		pass

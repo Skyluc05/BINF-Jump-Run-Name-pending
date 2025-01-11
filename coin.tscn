@@ -61,7 +61,7 @@ z_index = 1
 [node name="Coin" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_cvbag")
-animation = &"Coin WEG"
+animation = &"Coin"
 script = ExtResource("8_lcni3")
 
 [node name="Area2D" type="Area2D" parent="Coin"]
