@@ -1277,7 +1277,13 @@ position = Vector2(-190, -96)
 [node name="Enemys" type="Node2D" parent="."]
 
 [node name="Fierce Tooth" parent="Enemys" instance=ExtResource("104_pm3au")]
+position = Vector2(950, 334)
+
+[node name="Fierce Tooth2" parent="Enemys" instance=ExtResource("104_pm3au")]
 position = Vector2(1348, 608)
+
+[node name="Fierce Tooth3" parent="Enemys" instance=ExtResource("104_pm3au")]
+position = Vector2(215, 527)
 
 [node name="Spikes" type="Node2D" parent="Enemys"]
 
@@ -1366,7 +1372,7 @@ position = Vector2(716, 40)
 position = Vector2(809, 39)
 
 [node name="Spikes29" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
-position = Vector2(872, -4)
+position = Vector2(867, 40)
 
 [node name="Spikes30" parent="Enemys/Spikes" instance=ExtResource("13_2b068")]
 position = Vector2(893, 38)

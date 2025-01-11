@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://dtrj0iv6j6548" path="res://Sprites/Enemys/Fierce Tooth/02-Run/Run 06.png" id="6_54yjw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ius4x"]
-size = Vector2(18, 1)
+size = Vector2(14, 1)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_j86g4"]
 animations = [{
